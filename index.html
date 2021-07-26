@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiple Choice</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+      padding: 0;
+      border: none;
+      box-shadow: none;
+    }
+
+    .wrapper>section:nth-child(odd) {
+      background-color: rgb(213, 219, 213);
+    }
+
+    .wrapper {
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .section {
+      padding: 20px;
+      margin: 20px 0px;
+      height: auto;
+      max-width: 800px;
+      background-color: silver;
+    }
+
+    .section>h2,
+    h3 {
+      font-family: "Ubuntu mono", "Franklin Gothic Medium", "Arial Narrow", Arial,
+        sans-serif;
+      font-weight: normal;
+    }
+
+    .ques {
+      padding-bottom: 0px;
+    }
+
+    .Intro input {
+      font-weight: 100;
+      display: block;
+      width: 300px;
+      padding: 15px;
+      margin: 0 auto;
+      box-align: center;
+      border: solid 1.5px #d3d3d3;
+      border-radius: 5px;
+    }
+
+    #submit {
+      font-weight: 100;
+      display: block;
+      width: 300px;
+      padding: 15px;
+      margin: 0 auto;
+      box-align: center;
+      border: solid 1.5px #d3d3d3;
+      border-radius: 5px;
+    }
+
+    .Hide {
+      display: none;
+    }
+
+    #Ans {
+      display: none;
+      font-size: large;
+      text-align: center;
+      padding: 30px;
+      color: rgb(23, 66, 80);
+    }
+
+    input[type="text"]:hover {
+      box-shadow: 0 0 5pt 1pt rgb(250, 189, 189);
+    }
+
+    input[type="text"]:focus {
+      box-shadow: 0 0 5pt 2pt #def;
+    }
+
+    .Intro>h2,
+    label,
+    input {
+      text-align: center;
+      display: block;
+      padding: 10px;
+    }
+
+    .Options {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+    }
+
+    .Options>.option label,
+    input {
+      display: inline;
+      padding: 10px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <section class="section Intro">
+      <h2>Multiple Choice Form</h2>
+      <label for="Name">Enter Your Name Please</label>
+      <input type="text" name="Name" id="Name" placeholder="Your Name" required>
+    </section>
+    <section class="section" id="Ans">
+
+    </section>
+    <section class="section ques">
+      <h3>1.What is the Name of the capital of BD?</h2>
+        <div class="Options">
+          <div class="option">
+            <input type="radio" autocomplete="off" name="q1" id="1" value="1" autocomplete="off">
+            <label for="1">Noakhali</label>
+          </div>
+          <div class="option">
+            <input type="radio" autocomplete="off" name="q1" id="2" value="2">
+            <label for="2">Chittagong</label>
+          </div>
+          <div class="option">
+            <input type="radio" autocomplete="off" name="q1" id="3" value="3">
+            <label for="3">B-Baria</label>
+          </div>
+          <div class="option">
+            <input type="radio" autocomplete="off" name="q1" id="4" value="4">
+            <label for="4">Dhaka</label>
+          </div>
+        </div>
+    </section>
+
+    <section class="section ques">
+      <h3>2.Who is the best Actor of Our Country?</h2>
+        <div class="Options">
+          <div class="option">
+            <input type="radio" autocomplete="off" name="q2" id="1" value="1">
+            <label for="1">Alom Vai</label>
+          </div>
+          <div class="option">
+            <input type="radio" autocomplete="off" name="q2" id="2" value="2">
+            <label for="2">Ismail</label>
+          </div>
+          <div class="option">
+            <input type="radio" autocomplete="off" name="q2" id="3" value="3">
+            <label for="3">Parvez</label>
+          </div>
+          <div class="option">
+            <input type="radio" autocomplete="off" name="q2" id="4" value="4">
+            <label for="4">Turza</label>
+          </div>
+        </div>
+    </section>
+    <section class="section ques">
+      <h3>3.Who is the Top bainchud od our group</h2>
+        <div class="Options">
+          <div class="option">
+            <input type="radio" autocomplete="off" name="q3" id="1" value="1">
+            <label for="1">Parvez</label>
+          </div>
+          <div class="option">
+            <input type="radio" autocomplete="off" name="q3" id="2" value="2">
+            <label for="2">Sumon</label>
+          </div>
+          <div class="option">
+            <input type="radio" autocomplete="off" name="q3" id="3" value="3">
+            <label for="3">Turza</label>
+          </div>
+          <div class="option">
+            <input type="radio" autocomplete="off" name="q3" id="4" value="4">
+            <label for="4">Ismail</label>
+          </div>
+        </div>
+    </section>
+    <section class="section ques">
+      <h3>4.Apni ki diye Bal Katen??</h3>
+      <div class="Options">
+        <div class="option">
+          <input type="radio" autocomplete="off" name="q4" id="1" value="1">
+          <label for="1">Razor</label>
+        </div>
+        <div class="option">
+          <input type="radio" autocomplete="off" name="q4" id="2" value="2">
+          <label for="2">Blade</label>
+        </div>
+        <div class="option">
+          <input type="radio" autocomplete="off" name="q4" id="3" value="3">
+          <label for="3">Scissor</label>
+        </div>
+        <div class="option">
+          <input type="radio" autocomplete="off" name="q4" id="4" value="4">
+          <label for="4">Katen na</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <button type="submit " id="submit" value="" onclick="hello()">Click to Submit</button>
+    </section>
+
+  </div>
+  <!-- <script src="./script.js"> </script> -->
+  <script>
+    let mainAns = [0, 1, 2, -1, 1];
+
+    document.querySelector("#Name").value = "";
+
+    let hello = () => {
+      let ans = [100, 200, 300, 400, 500];
+      const questions = document.querySelectorAll('[type ="radio"]');
+      for (i = 0; i <
+        questions.length; i++) {
+        if (questions[i].checked) {
+          ans[questions[i].name[1]] = questions[i].value;
+        }
+      }
+      let count = 1;
+      for (i = 1; i <= 4; i++)
+        if (mainAns[i] == ans[i]) count++;
+      const name = document.querySelector("#Name").value;
+      let
+        score = (count * 100) / 4;
+      if (count == 1) score = 0;
+      const AnsSec = document.querySelector("#Ans");
+      let text = `Dear ${name}
+  <br />Your Score is ${score}%`;
+      const sects = document.querySelectorAll(".section");
+      sects.forEach((i) => {
+        i.classList.add("Hide");
+      });
+      AnsSec.style.display = "block";
+      AnsSec.innerHTML = text;
+    };
+  </script>
+</body>
+
+</html>
